@@ -9,7 +9,6 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 
 <body>
@@ -23,12 +22,24 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav filter-li">
                     <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#"><i class="bi bi-house"></i> Home</a>
                     </li>
+                    <li class="nav-item" >
+                        <a class="nav-link active" aria-current="page" href="#" data-name="showAll">Show All</a>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#"><i class="bi bi-gear"></i> Gerenciar</a>
+                        <a class="nav-link" aria-current="page" href="#" data-name="bisao">Bisão</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#" data-name="falcao">Falcão</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#" data-name="papagaio">Papagaio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#" data-name="tigre">Tigre</a>
                     </li>
                 </ul>
             </div>
@@ -39,7 +50,7 @@
 
     <div class="container galeria my-4">
         <div class="row">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4 card-animal"  data-name="falcao">
                 <div class="card">
                     <img src="./assets/img/Falcao1.png" class="card-img-top" alt="..." data-bs-toggle="modal"
                         data-bs-target="#Falcao1">
@@ -51,7 +62,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4 card-animal"  data-name="falcao">
                 <div class="card">
                     <img src="./assets/img/Falcao2.png" class="card-img-top" alt="..." data-bs-toggle="modal"
                         data-bs-target="#Falcao2">
@@ -63,7 +74,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4 card-animal"  data-name="falcao">
                 <div class="card">
                     <img src="./assets/img/Falcao3.png" class="card-img-top" alt="..." data-bs-toggle="modal"
                         data-bs-target="#Falcao3">
@@ -75,7 +86,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4 card-animal" data-name="falcao">
                 <div class="card">
                     <img src="./assets/img/Falcao4.png" class="card-img-top" alt="..." data-bs-toggle="modal"
                         data-bs-target="#Falcao4">
@@ -87,7 +98,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4 card-animal" data-name="tigre">
                 <div class="card">
                     <img src="./assets/img/Tigre1.jpg" class="card-img-top" alt="..." data-bs-toggle="modal"
                         data-bs-target="#Tigre1">
@@ -99,7 +110,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4 card-animal" data-name="tigre">
                 <div class="card">
                     <img src="./assets/img/Tigre2.jpg" class="card-img-top" alt="..." data-bs-toggle="modal"
                         data-bs-target="#Tigre2">
@@ -111,7 +122,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4 card-animal" data-name="tigre">
                 <div class="card">
                     <img src="./assets/img/Tigre3.jpg" class="card-img-top" alt="..." data-bs-toggle="modal"
                         data-bs-target="#Tigre3">
@@ -122,7 +133,7 @@
                 </div>
             </div>
 
-            <div class="col col-sm col-md-6 col-lg-4 col-xl-3 mb-4">
+            <div class="col col-sm col-md-6 col-lg-4 col-xl-3 mb-4 card-animal" data-name="tigre">
                 <div class="card">
                     <img src="./assets/img/Tigre4.jpg" class="card-img-top" alt="..." data-bs-toggle="modal"
                         data-bs-target="#Tigre4">
@@ -134,7 +145,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4 card-animal" data-name="papagaio">
                 <div class="card">
                     <img src="./assets/img/Papagaio1.png" class="card-img-top" alt="..." data-bs-toggle="modal"
                         data-bs-target="#Papagaio1">
@@ -146,7 +157,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4 card-animal" data-name="papagaio">
                 <div class="card">
                     <img src="./assets/img/Papagaio3.png" class="card-img-top" alt="..." data-bs-toggle="modal"
                         data-bs-target="#Papagaio3">
@@ -158,7 +169,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4 card-animal" data-name="bisao">
                 <div class="card">
                     <img src="./assets/img/Bisao1.png" class="card-img-top" alt="..." data-bs-toggle="modal"
                         data-bs-target="#Bisao1">
@@ -170,7 +181,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4 card-animal" data-name="bisao">
                 <div class="card">
                     <img src="./assets/img/Bisao2.png" class="card-img-top" alt="..." data-bs-toggle="modal"
                         data-bs-target="#Bisao2">
@@ -345,6 +356,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
+        <script src="script.js"></script>
 </body>
 
 </html>

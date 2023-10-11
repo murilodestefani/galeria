@@ -6,6 +6,15 @@
     background-color: #C0E6DE;
 }  */
 
+.nav-link.active {
+    color: #269490 !important;
+    font-weight: bold;
+}
+
+.card-animal.hidden {
+    display: none;
+}
+
 footer {
     background-color: #212427;
     color: #fdfdfd;
