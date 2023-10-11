@@ -9,6 +9,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -22,15 +23,21 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <ul class="navbar-nav filterCard">
+                    <li class="nav-item active navItem" data-name="ShowAll">
+                        <a class="nav-link active" aria-current="page" href="#">Show All</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Categoria 1</a>
+                    <li class="nav-item active navItem" data-name="falcao">
+                        <a class="nav-link active" aria-current="page" href="#">Falcao</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Categoria 2</a>
+                    <li class="nav-item navItem" data-name="tigre">
+                        <a class="nav-link" href="#">Tigre</a>
+                    </li>
+                    <li class="nav-item navItem" data-name="papagaio">
+                        <a class="nav-link" href="#">Papagaio</a>
+                    </li>
+                    <li class="nav-item navItem" data-name="bisa">
+                        <a class="nav-link" href="#">Bisao</a>
                     </li>
                 </ul>
             </div>
@@ -40,9 +47,9 @@
 
 
     <div class="container galeria my-4">
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="card">
+        <div class="row cardList">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                <div class="card" data-name="falcao">
                     <img src="./assets/img/Falcao1.png" class="card-img-top" alt="..." data-bs-toggle="modal"
                         data-bs-target="#Falcao1">
                     <div class="card-body">
@@ -53,8 +60,8 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="card">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                <div class="card" data-name="falcao">
                     <img src="./assets/img/Falcao2.png" class="card-img-top" alt="..." data-bs-toggle="modal"
                         data-bs-target="#Falcao2">
                     <div class="card-body">
@@ -65,8 +72,8 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="card">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                <div class="card" data-name="falcao">
                     <img src="./assets/img/Falcao3.png" class="card-img-top" alt="..." data-bs-toggle="modal"
                         data-bs-target="#Falcao3">
                     <div class="card-body">
@@ -77,30 +84,32 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="card">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                <div class="card" data-name="falcao">
                     <img src="./assets/img/Falcao4.png" class="card-img-top" alt="..." data-bs-toggle="modal"
                         data-bs-target="#Falcao4">
                     <div class="card-body">
                         <h5 class="card-title">Falco sparverius</h5>
-                        <p class="card-text">Guardião dos Céus, seu Impacto na Ecologia dos Céus.</p>
+                        <p class="card-text">Um dos maiores guardiões das Alturas e seu Impacto na Ecologia dos Céus da
+                            Africa.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="card">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                <div class="card" data-name="tigre">
                     <img src="./assets/img/Tigre1.jpg" class="card-img-top" alt="..." data-bs-toggle="modal"
                         data-bs-target="#Tigre1">
                     <div class="card-body">
-                        <h5 class="card-title">Panthera tigris altaica</h5>
-                        <p class="card-text">Força e Graça: Um Tigre Siberiano em Seu Momento Mais Sereno.</p>
+                        <h5 class="card-title">O Tigre de Bengal</h5>
+                        <p class="card-text">Sombra e Silêncio: O Tigre de Bengal em sua Pausa Majestosa - Sob a Luz
+                            Dourada do Crepúsculo, Ele Repousa </p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="card">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                <div class="card" data-name="tigre">
                     <img src="./assets/img/Tigre2.jpg" class="card-img-top" alt="..." data-bs-toggle="modal"
                         data-bs-target="#Tigre2">
                     <div class="card-body">
@@ -111,8 +120,8 @@
                 </div>
             </div>
 
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="card">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                <div class="card" data-name="tigre">
                     <img src="./assets/img/Tigre3.jpg" class="card-img-top" alt="..." data-bs-toggle="modal"
                         data-bs-target="#Tigre3">
                     <div class="card-body">
@@ -122,65 +131,62 @@
                 </div>
             </div>
 
-            <div class="col col-sm col-md-6 col-lg-4 col-xl-3">
-                <div class="card">
+            <div class="col col-sm col-md-6 col-lg-4 col-xl-3 mb-4">
+                <div class="card" data-name="tigre">
                     <img src="./assets/img/Tigre4.jpg" class="card-img-top" alt="..." data-bs-toggle="modal"
                         data-bs-target="#Tigre4">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Vigilantes da Noite: Olhar Atento do Tigre de Sumatra em Meio às Sombras da Selva.</p>
+                        <h5 class="card-title">Panthera tigris sumatrae</h5>
+                        <p class="card-text">Vigilantes da Noite: Olhar Atento do Tigre de Sumatra em Meio às Sombras da
+                            Selva.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="card">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                <div class="card" data-name="papagaio">
                     <img src="./assets/img/Papagaio1.png" class="card-img-top" alt="..." data-bs-toggle="modal"
                         data-bs-target="#Papagaio1">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's
-                            content.</p>
+                        <h5 class="card-title">Cyanocitta cristata: Gaio-azul</h5>
+                        <p class="card-text">Uma Explosão de Azul nos Céus - Este gaio-azul, com suas penas
+                            vibrantes e olhos atentos, é capturado em um momento de pura elegância.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="card">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                <div class="card" data-name="papagaio">
                     <img src="./assets/img/Papagaio3.png" class="card-img-top" alt="..." data-bs-toggle="modal"
                         data-bs-target="#Papagaio3">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's
-                            content.</p>
+                        <h5 class="card-title">Canário-amarelo</h5>
+                        <p class="card-text">A Luz do Sol em Forma de Pássaro - O canário-amarelo, posa delicadamente
+                            entre flores amarelas em um jardim ensolarado. .</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="card">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                <div class="card" data-name="bisao">
                     <img src="./assets/img/Bisao1.png" class="card-img-top" alt="..." data-bs-toggle="modal"
                         data-bs-target="#Bisao1">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's
-                            content.</p>
+                        <h5 class="card-title">Búfalo-africano</h5>
+                        <p class="card-text">A Força Silenciosa da Savana - Este majestoso é capturado em um momento de
+                            serenidade nas vastas planícies da savana africana.</p>
                     </div>
                 </div>
             </div>
 
-            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3">
-                <div class="card">
+            <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-3 mb-4">
+                <div class="card" data-name="bisao">
                     <img src="./assets/img/Bisao2.png" class="card-img-top" alt="..." data-bs-toggle="modal"
                         data-bs-target="#Bisao2">
                     <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's
-                            content.</p>
+                        <h5 class="card-title">Bisão-americano</h5>
+                        <p class="card-text">Também conhecido como bisão-do-cânion, é uma visão imponente contra o pano
+                            de fundo das vastas pradarias Sua pelagem espessa e poderosa.</p>
                     </div>
                 </div>
             </div>
@@ -199,7 +205,7 @@
         </div>
     </div>
 
-    <div class="modal fade" id="Falcao1" tabindex="-1" role="dialog" aria-labelledby="imagemModalLabel"
+    <div class="modal fade" id="Falcao2" tabindex="-1" role="dialog" aria-labelledby="imagemModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -221,7 +227,7 @@
         </div>
     </div>
 
-    <div class="modal fade" id="Falcao1" tabindex="-1" role="dialog" aria-labelledby="imagemModalLabel"
+    <div class="modal fade" id="Falcao4" tabindex="-1" role="dialog" aria-labelledby="imagemModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -232,7 +238,7 @@
         </div>
     </div>
 
-    <div class="modal fade" id="Falcao1" tabindex="-1" role="dialog" aria-labelledby="imagemModalLabel"
+    <div class="modal fade" id="Tigre1" tabindex="-1" role="dialog" aria-labelledby="imagemModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -243,12 +249,79 @@
         </div>
     </div>
 
-    <div class="modal fade" id="Falcao1" tabindex="-1" role="dialog" aria-labelledby="imagemModalLabel"
+    <div class="modal fade" id="Tigre2" tabindex="-1" role="dialog" aria-labelledby="imagemModalLabel"
         aria-hidden="true">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-body">
-                    <img src="./assets/img/Tigre1.jpg" alt="Imagem tigre" class="img-fluid">
+                    <img src="./assets/img/Tigre2.jpg" alt="Imagem tigre" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Tigre3" tabindex="-1" role="dialog" aria-labelledby="imagemModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="./assets/img/Tigre3.jpg" alt="Imagem tigre" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Tigre4" tabindex="-1" role="dialog" aria-labelledby="imagemModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="./assets/img/Tigre4.jpg" alt="Imagem tigre" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Papagaio1" tabindex="-1" role="dialog" aria-labelledby="imagemModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="./assets/img/Papagaio1.png" alt="Imagem papagaio" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="modal fade" id="Papagaio3" tabindex="-1" role="dialog" aria-labelledby="imagemModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="./assets/img/Papagaio3.png" alt="Imagem papagaio" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Bisao1" tabindex="-1" role="dialog" aria-labelledby="imagemModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="./assets/img/Bisao1.png" alt="Imagem bisao" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Bisao2" tabindex="-1" role="dialog" aria-labelledby="imagemModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img src="./assets/img/Bisao2.png" alt="Imagem bisao" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -258,29 +331,21 @@
 
 
 
-    <footer class="text-center">
+    <footer class="flex flex-row justify-content-between px-4 py-2">
+        <a class="navbar-brand" href="./galeria.html">
+            <i class="bi bi-camera2"></i> <span>Foto Splash</span>
+        </a>
 
-        <div class="container pt-4">
-
-            <section class="">
-                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                    data-mdb-ripple-color="dark"></a>
-                <i class="bi bi-facebook"></i></a>
-
-                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                    data-mdb-ripple-color="dark">
-                    <i class="bi bi-twitter-x"></i>
-                </a>
-
-                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
-                    data-mdb-ripple-color="dark">
-                    <i class="bi bi-instagram"></i>
-                </a>
-            </section>
+        <div class="developed">
+            <span>Desenvolvido por Aline, Gustavo, Maria Eduarda e Murilo</span>
         </div>
 
-        <div class="text-center text-dark p-3">
-            <span>Desenvolvido por Aline, Gustavo, Maria e Murilo</span>
+        <div class="social flex flex-row gap-2">
+            <a href="#" target="_blank"><i class="bi bi-facebook"></i></a>
+            <a href="#" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" target="_blank"><i class="bi bi-instagram"></i></a>
+            <a href="#" target="_blank"><i class="bi bi-youtube"></i></a>
         </div>
     </footer>
 

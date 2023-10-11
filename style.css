@@ -7,5 +7,18 @@
 }  */
 
 footer {
-    background-color: #C0E6DE !important;
+    background-color: #212427;
+    color: #fdfdfd;
+}
+
+footer a {
+    color: #fdfdfd;
+}
+
+footer a:hover {
+    color: #FFDC5E;
+}
+
+.card.hide {
+    display: none !important;
 }
